@@ -20,10 +20,15 @@ def part1():
     user = str(input("Please Choose a number: "))
 
     if user == "1":
-        
-
-    elif user == "2":
         pass
+    elif user == "2":
+        print("\t===== ACTIVITY 1 ======")
+        print("MY FIRST PROGRAM")
+        pass
+
+    else:
+        pass
+ 
 
 part0()
 part1()

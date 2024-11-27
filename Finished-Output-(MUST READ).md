@@ -3,7 +3,7 @@
 ACTIVITIES
 Final - Activity1 - (1st Sem BSIT-1C) (DONE)
 
-Final - Activity2 - (1st Sem BSIT-1C)
+Final - Activity2 - (1st Sem BSIT-1C) (DONE)
 
 Final - Activity3 - (1st Sem BSIT-1C)
 

@@ -23,7 +23,14 @@ def part1():
         pass
     elif user == "2":
         print("\t===== ACTIVITY 1 ======")
-        print("MY FIRST PROGRAM")
+        print("MY FIRST PROGRAM\n")
+        welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
+        if welcome == "yes":
+            print("\n")
+        os.system('cls')
+        
+        print("\t===== ACTIVITY 2 ======")
+        print("""\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba""")
         pass
 
     else:

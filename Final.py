@@ -28,9 +28,13 @@ def part1():
         if welcome == "yes":
             print("\n")
         os.system('cls')
-        
+
         print("\t===== ACTIVITY 2 ======")
-        print("""\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba""")
+        print("""\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n Arglen L. Elumba\n""")
+        welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
+        if welcome == "yes":
+            print("\n")
+        os.system('cls')
         pass
 
     else:

@@ -19,8 +19,52 @@ def part1():
     print("")
     user = str(input("Please Choose a number: "))
 
-    if user == "1":
-        pass
+    if user == "1": 
+        print("\t===== CODE CHALLENGE 1 ======\n")
+        name = str(input("What is your first name: "))
+
+        print("""
+
+        \n\n\n\n
+
+        \t\t\t\t\t\t\t\t\t\t*
+        \t\t\t\t\t\t\t\t\t*\t*\t*
+        \t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+        \t\t\t\t\t\t\t\t\t*\t*\t*
+        \t\t\t\t\t\t\t\t\t\t*
+
+        """)
+        welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
+        if welcome == "yes":
+            print("\n")
+        os.system('cls')
+
+        print("\t===== CODE CHALLENGE 2 ======\n")
+        name = str(input("What is your first name: "))
+
+        print("""
+
+        \n\n\n\n
+
+        \t\t\t\t\t\t\t\t\t\t*
+        \t\t\t\t\t\t\t\t\t*\t*\t*
+        \t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+        \t\t\t\t\t\t\t*\t*\t*""", name ,"""\t*\t*\t*
+        \t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+        \t\t\t\t\t\t\t\t\t*\t*\t*
+        \t\t\t\t\t\t\t\t\t\t*
+
+        \n""")
+
+        welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
+        if welcome == "yes":
+            print("\n")
+        os.system('cls')
+	
+
+            #Code3 ()
+
+        
     elif user == "2":
         print("\t===== ACTIVITY 1 ======")
         print("MY FIRST PROGRAM\n")

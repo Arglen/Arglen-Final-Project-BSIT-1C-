@@ -59,7 +59,58 @@ def part1():
         welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
         if welcome == "yes":
             print("\n")
-        os.system('cls') #here
+        os.system('cls') 
+
+        #code challenge 3 (STILL NOT DONE) <-----------------------------------------------------------------
+        #code challenge 4 (STILL NOT DONE) <-----------------------------------------------------------------
+        
+        print("\t===== CODE CHALLENGE 5 ======\n")
+
+        name = str(input("Enter your name: "))
+        amount = int(input("Enter your amount deposit: "))
+
+        a1 = amount // 1000
+        remaining = amount - a1 * 1000
+
+        b1 = remaining // 500
+        remaining -= b1 * 500
+
+        c1 = remaining // 200
+        remaining -= c1 * 200
+
+        d1 = remaining // 100
+        remaining -= d1 * 100
+
+        e1 = remaining // 50
+        remaining -= e1 * 50
+
+        f1 = remaining // 20
+        remaining -= f1 * 20
+
+        g1 = remaining // 10
+        remaining -= g1 * 10
+
+        h1 = remaining // 5
+        remaining -= h1 * 5
+
+        i1 = remaining // 1
+        remaining -= i1 * 1
+
+        print(f"Hi, {name}, your deposit is:")
+        print(f"{a1} - 1000")
+        print(f"{b1} - 500")  
+        print(f"{c1} - 200")  
+        print(f"{d1} - 100")  
+        print(f"{e1} - 50")  
+        print(f"{f1} - 20")  
+        print(f"{g1} - 10")  
+        print(f"{h1} - 5")  
+        print(f"{i1} - 1\n")  
+
+        welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
+        if welcome == "yes":
+            print("\n")
+        os.system('cls')
 	
         
     elif user == "2":

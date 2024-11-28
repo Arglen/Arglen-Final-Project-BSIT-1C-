@@ -5,6 +5,7 @@ def code_challenge():
 def activities():
     pass
 
+
 def part0():
     print("""========= WELCOME TO MY COMPILATION PROJECT ========= \n""")
     welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
@@ -111,6 +112,35 @@ def part1():
         if welcome == "yes":
             print("\n")
         os.system('cls')
+
+        print("\t===== CODE CHALLENGE 6 ======\n")
+
+
+        prelim = int(input("Enter your grade in prelim: "))
+        midterm = int(input("Enter your grade in midterm: "))
+        semi = int(input("Enter your grade in semifinal: "))
+        final = int(input("Enter your grade in final: "))
+        quiz = int(input("Enter your grade in quiz: "))
+        project = int(input("Enter your grade in project: "))
+
+        sem_grade = ((prelim * 0.15) + (midterm * 0.15) + (semi * 0.15) + (final * 0.15) + (quiz * 0.15) + (project * 0.15))
+        average = (prelim + midterm + semi + final + quiz + project) / 6
+        round_ave = (round(average, 1))
+
+        if sem_grade >= 75  and sem_grade <= 100:
+            print("Congratulations! You passed the course")
+            print(f"Your average is {round_ave}")
+        elif sem_grade <= 75 and sem_grade >= 100:
+            print("Unfornately, You failed the course")
+            print(f"Your average is {round_ave}\n")
+
+        else:
+            print("You failed the requirements")
+        welcome = str(input("\t     TYPE (YES) TO CONTINUE: "))
+        if welcome == "yes":
+            print("\n")
+        os.system('cls')
+        
 	
         
     elif user == "2":

@@ -61,9 +61,6 @@ def part1():
             print("\n")
         os.system('cls')
 	
-
-            #Code3 ()
-
         
     elif user == "2":
         print("\t===== ACTIVITY 1 ======")

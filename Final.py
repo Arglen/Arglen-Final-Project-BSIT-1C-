@@ -140,9 +140,11 @@ def part1():
         if welcome == "yes":
             print("\n")
         os.system('cls')
+
+        #code challenge 7 (STILL NOT DONE) <-----------------------------------------------------------------
+
         
 	
-        
     elif user == "2":
         print("\t===== ACTIVITY 1 ======")
         print("MY FIRST PROGRAM\n")
@@ -165,3 +167,5 @@ def part1():
 
 part0()
 part1()
+
+#new

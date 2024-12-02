@@ -56,7 +56,26 @@ def code_challenge2():
 
 # def code_challenge 3 <--------------------
 
-# def coode_challenge 4 <-------------------
+def code_challenge4():
+
+    number1 = int(input("Enter a number: "))
+    number2 = int(input("Enter another number: "))
+
+    sum = number1 + number2
+    minus = number1 - number2
+    mlt = number1 * number2
+    dvd = number1 / number2
+    expo = number1 ** number2
+    mod = number1 % number2 
+    fl_dvd = number1 // number2
+    rounded = (round(expo, 2))
+
+    print(f"The sum of {number1} and {number2} is : {sum}")
+    print(f"The difference of {number1} and {number2} is : {minus}")
+    print(f"The product of {number1} and {number2} is : {mlt}")
+    print(f"The quotient of {number1} and {number2} is : {dvd}")
+    print(f"The exponent of {number1} by {number2} is : {rounded}")
+    print(f"The flood division of {number1} and {number2} is : {fl_dvd}")
     
 def code_challenge5():
     print("\t===== CODE CHALLENGE 5 ======\n")
@@ -214,8 +233,22 @@ def code_challenge7():
     else:
         ("invalid purchase1")
 
-#def code_challenge8():
-    #pass
+def code_challenge8():
+    odd = 0
+    even = 0
+    sum = 0
+    for x in range (1,11):
+        number = eval(input(f"Proceed with number ({x}): "))
+        print(x, "=", number)
+        sum += number
+        if odd % 2 == 0:
+            odd += number
+            
+        else:
+            even += number
+        print("\tTotal Odd", odd)
+        print("\tTotal Even", even)
+        print("\tTotal", sum)
 
 #def code_challenge9():
     #pass

@@ -1,12 +1,4 @@
-
-
-def picking():
-    print(""" \t\n=============| ARGLEN L. ELUMBA |============\t\n============| COMPILATION PROJECT |============ \n""")
-    print("1. Code Challenges")
-    print("2. Acivities \n")
-    
 def intro_code_challenge():
-
     print("=====CODE CHALLENGES===== \n")
     print("1. Code Challenge ")
     print("2. Code Challenge ")
@@ -17,9 +9,37 @@ def intro_code_challenge():
     print("7. Code Challenge ")
     print("8. Code Challenge ")
     print("9. Code Challenge ")
-    print("10.Code Challenge \n")
-    print("0. Exit")
-    print("=========================\n")
+    print("10.Code Challenge ")
+    print("0. Exit\n")
+    user = str(input("ENTER A NUMBER: "))
+    if user == "1":
+        code_challenge1()
+    elif user == "2":
+        code_challenge2()
+        #code_challenge 3
+    elif user == "4":
+        code_challenge4()
+    elif user == "5":
+        code_challenge5()
+    elif user == "6":
+        code_challenge6()
+    elif user == "7":
+         code_challenge7()
+    elif user == "8":
+        code_challenge8()
+        #code challenge 9
+    elif user == "0":  
+        print("Return...")
+        return
+    else:
+        print("Invalid option. Please try again.")
+        print("=========================\n")
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------- CODE CHALLENGE 1 ------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
 
 def code_challenge1():
     print("""
@@ -36,7 +56,9 @@ def code_challenge1():
 
     \n""")
     
-
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------- CODE CHALLENGE 2 ------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
 def code_challenge2():
     name = str(input("What is your first name: "))
 

@@ -38,7 +38,8 @@ def intro_code_challenge():
             code_challenge8()
         elif user == "9":
             code_challenge9()
-            #code challenge 10
+        elif user == "10":
+            code_challenge10()
             #code challenge 11
         elif user == "0":  
             print("Return...")
@@ -353,3 +354,27 @@ def code_challenge9():
         print(" *" * x )
 
 #-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------- CODE CHALLENGE 10 -----------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def code_challenge10():
+    for r in range(1,7):
+        for i in range(7,r, -1):
+            print(" ",end="")
+        for j in range(0, r):
+            print("*", end="")
+        for k in range(r,7, -1):
+            print("*", end="")
+        for l in range(0,r):
+            print("*", end="")
+        print()
+
+    for t in range(1,7):
+        for x in range(1,t + 1):
+            print(" ", end="")
+        for y in range(7,t, -1):
+            print("*", end="")
+        for y in range(7,t, -1):
+            print("*", end="")    
+        print()
+

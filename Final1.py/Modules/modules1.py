@@ -1,39 +1,51 @@
+import os
+
+
 def intro_code_challenge():
-    print("=====CODE CHALLENGES===== \n")
-    print("1. Code Challenge ")
-    print("2. Code Challenge ")
-    print("3. Code Challenge ")
-    print("4. Code Challenge ")
-    print("5. Code Challenge ")
-    print("6. Code Challenge ")
-    print("7. Code Challenge ")
-    print("8. Code Challenge ")
-    print("9. Code Challenge ")
-    print("10.Code Challenge ")
-    print("0. Exit\n")
-    user = str(input("ENTER A NUMBER: "))
-    if user == "1":
-        code_challenge1()
-    elif user == "2":
-        code_challenge2()
-        #code_challenge 3
-    elif user == "4":
-        code_challenge4()
-    elif user == "5":
-        code_challenge5()
-    elif user == "6":
-        code_challenge6()
-    elif user == "7":
-         code_challenge7()
-    elif user == "8":
-        code_challenge8()
-        #code challenge 9
-    elif user == "0":  
-        print("Return...")
-        return
-    else:
-        print("Invalid option. Please try again.")
+    while True:
+        print("=====CODE CHALLENGES===== \n")
+        print("1. Code Challenge ")
+        print("2. Code Challenge ")
+        print("3. Code Challenge ")
+        print("4. Code Challenge ")
+        print("5. Code Challenge ")
+        print("6. Code Challenge ")
+        print("7. Code Challenge ")
+        print("8. Code Challenge ")
+        print("9. Code Challenge ")
+        print("10.Code Challenge ")
+        print("0. Exit\n")
+        user = str(input("ENTER A NUMBER: "))
         print("=========================\n")
+
+        os.system('cls')
+
+        if user == "1":
+            code_challenge1()
+        elif user == "2":
+            code_challenge2()
+        elif user == "3":
+            code_challenge3()
+        elif user == "4":
+            code_challenge4()
+        elif user == "5":
+            code_challenge5()
+        elif user == "6":
+            code_challenge6()
+        elif user == "7":
+            code_challenge7()
+        elif user == "8":
+            code_challenge8()
+        elif user == "9":
+            code_challenge9()
+            #code challenge 10
+            #code challenge 11
+        elif user == "0":  
+            print("Return...")
+            return
+        else:
+            print("Invalid option. Please try again.")
+            print("=========================\n")
 
 
 
@@ -60,6 +72,7 @@ def code_challenge1():
 #----------------------------------------------- CODE CHALLENGE 2 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 def code_challenge2():
+    print("\t\t\t\t\t\t\t\t===== CODE CHALLENGE 2 ======")
     name = str(input("What is your first name: "))
 
     print("""
@@ -80,7 +93,38 @@ def code_challenge2():
 #----------------------------------------------- CODE CHALLENGE 3 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
-# def code_challenge 3 <--------------------
+
+#ELUMBA, ARGLEN L.
+#BSIT - 1C
+# ================PERSONAL DATA===================
+def code_challenge3():
+    first_name = str(input("First Name : "))
+    surname = str(input("Last Name : "))
+    m_initial = str(input("Middle Initial : "))
+    age = int(input("Age: "))
+    address = str(input("Permanent Address : "))
+    plc_birth = str(input("Place of Birth : "))
+    gender = str(input("Gender M/F: "))
+    religion = str(input("Religion : "))
+    height = int(input("Height(cm): "))
+    weight = int(input("Weight(kg) : "))
+
+    #==================FAMILY BACKGROUND====================
+
+    f_n = str(input("Father's Fullname : "))
+    o = str(input("Occupation : "))
+    p_n = int(input("Phone Number : "))
+
+    m_n = str(input("Mother's Fullname : "))
+    o = str(input("Occupation : "))
+    p_n = int(input("Phone Number : "))
+
+    #=====================BIO-DATA==========================
+
+    print(f" \n\t\t\t BIO DATA \n\n \t\t\tPERSONAL BACKGROUND \n\n Fullname: {first_name} {m_initial} {surname} \n Age: {age} \n Permanent Address: {address} \n Place of Birth: {plc_birth} \n Gender: {gender} \n Religion: {religion} \n Height: {height} \n Weight: {weight} \n")
+    print(f" \n\t\t\t Family Background \n Father's Name: {f_n} \n Occupation: {o} \n Phone Number: {p_n} \n")
+    print(f" Mother's Name: {m_n} \n Occupation: {o} \n Phone Number: {p_n} \n")
+
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------- CODE CHALLENGE 4 ------------------------------------------------------
@@ -276,7 +320,7 @@ def code_challenge7():
         ("invalid purchase1")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
-#----------------------------------------------- CODE CHALLENGE 9 ------------------------------------------------------
+#----------------------------------------------- CODE CHALLENGE 8 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
 def code_challenge8():
@@ -297,8 +341,15 @@ def code_challenge8():
         print("\tTotal", sum)
 
 #-----------------------------------------------------------------------------------------------------------------------                    
-#----------------------------------------------- CODE CHALLENGE 2 ------------------------------------------------------
+#----------------------------------------------- CODE CHALLENGE 9 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
-#def code_challenge9():
-    #pass
+def code_challenge9():
+    set = eval(input("put number: "))
+
+    for x in range(set,0,-1):
+        for y in range(set,x,-1):
+            print("  ",end="")
+        print(" *" * x )
+
+#-----------------------------------------------------------------------------------------------------------------------                    

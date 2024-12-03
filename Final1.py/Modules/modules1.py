@@ -14,6 +14,12 @@ def intro_code_challenge():
         print("8. Code Challenge ")
         print("9. Code Challenge ")
         print("10.Code Challenge ")
+        print("11.Code Challenge ")
+        print("12.Code Challenge ")
+        print("13.Code Challenge ")
+        print("14.Code Challenge ")
+        print("15.Code Challenge ")
+        print("16.Code Challenge ")
         print("0. Exit\n")
         user = str(input("ENTER A NUMBER: "))
         print("=========================\n")
@@ -40,7 +46,13 @@ def intro_code_challenge():
             code_challenge9()
         elif user == "10":
             code_challenge10()
-            #code challenge 11
+        elif user == "11":
+            code_challenge11()
+            #code 12
+            #code 13
+            #code 14
+            #code 15
+            #code 16
         elif user == "0":  
             print("Return...")
             return
@@ -378,3 +390,39 @@ def code_challenge10():
             print("*", end="")    
         print()
 
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------- CODE CHALLENGE 11 -----------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def code_challenge11():
+    for a in range(1, 6):
+        for b in range(6, a, -1):
+            print(" ", end=" ")
+        for b in range(0, a):
+            print("*", end=" ")
+        
+        print("    ", end="")  
+        
+        for c in range(a, 6, -1):
+            print("*", end=" ")
+        for d in range(2, a):
+            print("*", end="  ")
+        print()
+
+    print()  
+
+    for x in range(1, 6):
+        for y in range(-1, x + 1):
+            print(" ", end=" ")
+        for z in range(5, x, -1):
+            print("*", end=" ")
+        
+        print("  ", end="")  
+        
+        for my in range(3, x, -1):
+            print("*", end=" ")
+        print()
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------- CODE CHALLENGE 12 -----------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------

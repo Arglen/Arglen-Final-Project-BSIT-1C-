@@ -52,7 +52,8 @@ def intro_code_challenge():
             code_challenge12()
         elif user == "13":
             code_challenge13()
-            #code 14
+        elif user == "14":
+            code_challenge14()
             #code 15
             #code 16
         elif user == "0":  
@@ -473,6 +474,19 @@ def code_challenge13():
 #----------------------------------------------- CODE CHALLENGE 14 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
+def code_challenge14():
+    tuloy = True
+    a = 0
+    while tuloy == True:
+        number = eval(input("Enter a number--->  "))
+        if number == 0:
+            print("Program Terminated")
+            print(f"The total of the number you enter is {a}")
+            break
+
+        else:
+            a += number
+            continue
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------- CODE CHALLENGE 15 -----------------------------------------------------

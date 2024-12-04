@@ -1,6 +1,5 @@
 import os
 
-
 def intro_code_challenge():
     while True:
         print("=====CODE CHALLENGES===== \n")
@@ -56,7 +55,9 @@ def intro_code_challenge():
             code_challenge14()
         elif user == "15":
             code_challenge15()
-            #code 16
+        elif user == "16":
+            code_challenge16()
+
         elif user == "0":  
             print("Return...")
             return
@@ -494,7 +495,6 @@ def code_challenge14():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def code_challenge15():
-
     isContinue = True
     no = 0
     while isContinue == True:
@@ -516,8 +516,94 @@ def code_challenge15():
                 print()
         else:
             print("INVALID ANSWER it's only (yes/no)")
-            continue
+
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------- CODE CHALLENGE 16 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
+
+def code_challenge16():
+    def create_account():
+        name = str(input("Enter your name: "))
+        initial_deposit = float(input("Enter initial deposit: ₱"))
+        return name, initial_deposit
+
+    def deposit(balance, amount):
+        balance += amount
+        print(f"Deposited: ₱{amount}. Current balance: ₱{balance}.")
+        denomination(balance)
+        return balance
+
+    def withdraw(balance, amount):
+        if amount > balance:
+            print("Insufficient balance to withdraw.")
+        else:
+            balance -= amount
+            print(f"Withdrawn: ₱{amount}. Current balance: ₱{balance}.")
+            denomination(balance)
+        return balance
+
+    def check_balance(balance):
+        print(f"Current balance: ₱{balance}")
+        denomination(balance)
+
+    def denomination(amount):
+        print("Filipino denomination breakdown:")
+        denominations = [1000, 500, 200, 100, 50, 20, 10, 5, 1]
+        for denom in denominations:
+            count = amount // denom
+            if count > 0:
+                print(f"₱{denom}: {count}")
+            amount %= denom
+
+    def main():
+        print("++++++++++++++++")
+        print("WELCOME TO ONLINE BANK")
+        
+        name, balance = None 
+        account_created = False
+
+        while True:
+            print("\nOptions:")
+            if not account_created:
+                print("1. Create account")
+            print("2. Deposit")
+            print("3. Withdraw")
+            print("4. Check balance")
+            print("5. Exit")
+            print("++++++++++++++++")
+            
+            choice = input("Choose an option: ")
+
+            if choice == '1' and not account_created:
+                name, balance = create_account()
+                account_created = True
+                print(f"Account created for {name}.")
+            
+            elif choice == '2':
+                if not account_created:
+                    print("Please create an account first.")
+                    continue
+                amount = float(input("Enter deposit amount: ₱"))
+                balance = deposit(balance, amount)
+            
+            elif choice == '3':
+                if not account_created:
+                    print("Please create an account first.")
+                    continue
+                amount = float(input("Enter withdrawal amount: ₱"))
+                balance = withdraw(balance, amount)
+            
+            elif choice == '4':
+                if not account_created:
+                    print("Please create an account first.")
+                    continue
+                check_balance(balance)
+            
+            elif choice == '5':
+                print("Thank you for usiing the Online Bank")
+                break
+            
+            else:
+                print("Invalid option. Please try again.")
+    main()

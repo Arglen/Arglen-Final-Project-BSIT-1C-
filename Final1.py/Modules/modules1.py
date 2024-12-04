@@ -56,7 +56,7 @@ def intro_code_challenge():
         elif user == "15":
             code_challenge15()
         elif user == "16":
-            code_challenge16()
+            Code16()
 
         elif user == "0":  
             print("Return...")
@@ -522,88 +522,93 @@ def code_challenge15():
 #----------------------------------------------- CODE CHALLENGE 16 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
-def code_challenge16():
-    def create_account():
-        name = str(input("Enter your name: "))
-        initial_deposit = float(input("Enter initial deposit: ₱"))
-        return name, initial_deposit
+# BANK SIMULATION PROGRAM
+# Create new account
+# if account exists, deposit, withdraw, check balance -- function
+# if deposit, enter amount, give Filipino denomination breakdown
+# if withdraw, you cannot withdraw if balance is lower than withdraw amount
+# deposit, ask how much? and show current balance
+# continue to repeat the process until user opts out or exits the program, use while loop
+# you will create a function that will break down a Filipino denomination and then print it
+# Create a Python program that can create banking accounts, with the following information:
+# initial deposit, name
+# user can also deposit, withdraw, and every deposit program should be able to display the current balance
+# program will only terminate if user choose to terminate the program
 
-    def deposit(balance, amount):
-        balance += amount
-        print(f"Deposited: ₱{amount}. Current balance: ₱{balance}.")
-        denomination(balance)
-        return balance
+def Code16():
+    denominations = [1000, 500, 200, 100, 50, 20, 10, 5, 1]
 
-    def withdraw(balance, amount):
-        if amount > balance:
-            print("Insufficient balance to withdraw.")
+    accounts = {}
+
+    def create_account(name, initial_deposit):
+        if name in accounts:
+            print(f"Account with name '{name}' already exists.")
         else:
-            balance -= amount
-            print(f"Withdrawn: ₱{amount}. Current balance: ₱{balance}.")
-            denomination(balance)
-        return balance
+            accounts[name] = initial_deposit
+            print(f"Account created for '{name}' with an initial deposit of PHP {initial_deposit}.")
 
-    def check_balance(balance):
-        print(f"Current balance: ₱{balance}")
-        denomination(balance)
+    def check_balance(name):
+        if name in accounts:
+            print(f"Current balance for '{name}': PHP {accounts[name]}")
+        else:
+            print("Account does not exist.")
 
-    def denomination(amount):
-        print("Filipino denomination breakdown:")
-        denominations = [1000, 500, 200, 100, 50, 20, 10, 5, 1]
+    def denomination_breakdown(amount):
+        print("Denomination breakdown:")
         for denom in denominations:
             count = amount // denom
             if count > 0:
-                print(f"₱{denom}: {count}")
+                print(f"{denom} x {count}")
             amount %= denom
 
-    def main():
-        print("++++++++++++++++")
-        print("WELCOME TO ONLINE BANK")
-        
-        name, balance = None 
-        account_created = False
+    def deposit(name, amount):
+        if name in accounts:
+            accounts[name] += amount
+            print(f"Deposited PHP {amount} to '{name}'. New balance: PHP {accounts[name]}")
+            denomination_breakdown(amount)
+        else:
+            print("Account does not exist.")
 
+    def withdraw(name, amount):
+        if name in accounts:
+            if accounts[name] >= amount:
+                accounts[name] -= amount
+                print(f"Withdrew PHP {amount} from '{name}'. New balance: PHP {accounts[name]}")
+            else:
+                print("Insufficient balance!")
+        else:
+            print("Account does not exist.")
+
+    def main():
         while True:
-            print("\nOptions:")
-            if not account_created:
-                print("1. Create account")
-            print("2. Deposit")
-            print("3. Withdraw")
-            print("4. Check balance")
-            print("5. Exit")
-            print("++++++++++++++++")
-            
+            print("\n--- BANK SIMULATION PROGRAM ---")
+            print("1. Create Account")
+            print("2. Deposit Money")
+            print("3. Withdraw Money")
+            print("4. Check Balance")
+            print("5. Exit Program")
+
             choice = input("Choose an option: ")
 
-            if choice == '1' and not account_created:
-                name, balance = create_account()
-                account_created = True
-                print(f"Account created for {name}.")
-            
-            elif choice == '2':
-                if not account_created:
-                    print("Please create an account first.")
-                    continue
-                amount = float(input("Enter deposit amount: ₱"))
-                balance = deposit(balance, amount)
-            
-            elif choice == '3':
-                if not account_created:
-                    print("Please create an account first.")
-                    continue
-                amount = float(input("Enter withdrawal amount: ₱"))
-                balance = withdraw(balance, amount)
-            
-            elif choice == '4':
-                if not account_created:
-                    print("Please create an account first.")
-                    continue
-                check_balance(balance)
-            
-            elif choice == '5':
-                print("Thank you for usiing the Online Bank")
+            if choice == "1":
+                name = input("Enter account name: ")
+                initial_deposit = eval(input("Enter initial deposit: "))
+                create_account(name, initial_deposit)
+            elif choice == "2":
+                name = input("Enter account name: ")
+                amount = eval(input("Enter amount to deposit: "))
+                deposit(name, amount)
+            elif choice == "3":
+                name = input("Enter account name: ")
+                amount = eval(input("Enter amount to withdraw: "))
+                withdraw(name, amount)
+            elif choice == "4":
+                name = input("Enter account name: ")
+                check_balance(name)
+            elif choice == "5":
+                print("Thank you for using the Bank Simulation Program. Goodbye!")
                 break
-            
             else:
-                print("Invalid option. Please try again.")
+                print("Invalid choice. Please try again.")
     main()
+Code16()

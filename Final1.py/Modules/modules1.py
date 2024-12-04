@@ -54,7 +54,8 @@ def intro_code_challenge():
             code_challenge13()
         elif user == "14":
             code_challenge14()
-            #code 15
+        elif user == "15":
+            code_challenge15()
             #code 16
         elif user == "0":  
             print("Return...")
@@ -492,6 +493,30 @@ def code_challenge14():
 #----------------------------------------------- CODE CHALLENGE 15 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
+def code_challenge15():
+
+    isContinue = True
+    no = 0
+    while isContinue == True:
+        ask = input("Would you like to add another triangle (yes / no )--> ")
+
+        if ask.lower() == "no":
+            print("PROGRAM TERMINATED")
+            break
+            isContinue = False
+        elif ask.lower() == "yes":
+            os.system('cls')
+            no += 1
+            for x in range (1, 6):
+                for r in range (1 , no + 1):
+                    for y in range (1 , x + 1):
+                        print("*", end=" ")
+                    for z in range (6, x, -1):
+                        print(" ",end=" ")
+                print()
+        else:
+            print("INVALID ANSWER it's only (yes/no)")
+            continue
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------- CODE CHALLENGE 16 -----------------------------------------------------

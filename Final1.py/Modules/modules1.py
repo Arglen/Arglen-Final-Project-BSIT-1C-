@@ -50,7 +50,8 @@ def intro_code_challenge():
             code_challenge11()
         elif user == "12":
             code_challenge12()
-            #code 13
+        elif user == "13":
+            code_challenge13()
             #code 14
             #code 15
             #code 16
@@ -449,6 +450,24 @@ def code_challenge12():
 #----------------------------------------------- CODE CHALLENGE 13 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
+def code_challenge13():
+    for a in range(1, 7):
+        for b in range(7, a, -1):
+            print(" ", end=" ")
+        for b in range(a, 0, -1):
+            print(b, end=" ")
+        for c in range(2, a + 1):
+            print(c, end=" ")
+        print()
+
+    for x in range(5, 0, -1):
+        for y in range(7, x, -1):
+            print(" ", end=" ")
+        for z in range(x, 0, -1):
+            print(z, end=" ")
+        for w in range(2, x + 1):
+            print(w, end=" ")
+        print()
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------- CODE CHALLENGE 14 -----------------------------------------------------

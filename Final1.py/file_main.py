@@ -1,5 +1,6 @@
 import os
 from Modules import modules1
+from Act_Modules import act_modules1
 
 def main():
     
@@ -14,7 +15,7 @@ def main():
             modules1.intro_code_challenge()
 
         elif user == "2":
-            pass
+            act_modules1.activity_intro()
 
         elif user == "3":  
             exit()

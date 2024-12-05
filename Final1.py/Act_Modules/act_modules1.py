@@ -26,7 +26,7 @@ def activity_intro():
         elif user == "3":
             activity3()
         elif user == "4":
-            pass
+            activity4()
         elif user == "5":
             pass
         elif user == "6":
@@ -101,3 +101,24 @@ def activity3():
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 4 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
+
+def activity4():
+    print("\n\t========================== ACTIVITY 4 ==========================\n")
+    number1 = eval(input("Input first number here > "))
+    number2 = eval(input("Input 2nd number here > "))
+    print(type(number1))
+    print(type(number2))
+    calc = number1 + number2
+    minus = number1 - number2
+    product = number1 * number2
+    quotient = number1 / number2
+    exponent = number1 ** number2
+    remainder = number1 % number2
+    fdivision = number1 // number2
+    print("\nThe sum of" , number1 , "and" , number2 , "is" , calc)
+    print("The difference of" , number1 , "and" , number2 , "is" , minus)
+    print("The product of" , number1 , "and" , number2 , "is" , product)
+    print("The quotient of" , number1 , "and" , number2 , "is" , quotient)
+    print(number1 , "exponent by" , number2 , "is" , exponent)
+    print("The remainder of" , number1 , "and" , number2 , "is" , remainder)
+    print("The floor division of" , number1 , "and" , number2 , "is" , fdivision)

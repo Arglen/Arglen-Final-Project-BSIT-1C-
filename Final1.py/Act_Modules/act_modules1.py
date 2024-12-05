@@ -2,7 +2,7 @@ import os
 
 def activity_intro():
     while True:
-        print("====== ACTIVITIES ====== \n")
+        print("\t====== ACTIVITIES ====== \n")
         print("\t1. Activity \t\t 2. Activity ")
         print("\t3. Activity \t\t 4. Activity ")
         print("\t5. Activity \t\t 6. Activity ")
@@ -32,7 +32,7 @@ def activity_intro():
         elif user == "6":
             activity6()
         elif user == "7":
-            pass
+            activity7()
         elif user == "8":
             pass
         elif user == "9":
@@ -143,8 +143,8 @@ def activity5():
 #----------------------------------------------------- ACTIVITY 6 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
-def activity6():
 
+def activity6():
     print("\n\t========================== ACTIVITY 6 ==========================\n")
     x = 5
     print(f"{x}")
@@ -161,3 +161,16 @@ def activity6():
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 7 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
+
+def activity7():
+    print("\n\t========================== ACTIVITY 7 ==========================\n")
+    miner = str(input("Enter you name: "))
+    mined = str(input("Did you mine gold today (yes/no) : "))
+    gold = 0
+    if mined.lower() == "yes":
+        gold += 1
+        print(f" Your total mined today is {gold} gold\n")
+    elif mined.lower() == "no":
+        print(f" You havent mined a gold today\n")
+    else:
+        print("Invalid error\n")

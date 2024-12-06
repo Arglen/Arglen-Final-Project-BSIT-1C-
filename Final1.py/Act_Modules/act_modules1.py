@@ -36,7 +36,7 @@ def activity_intro():
         elif user == "8":
             pass
         elif user == "9":
-            pass
+            activity9()
         elif user == "10":
             pass
         elif user == "11":
@@ -174,3 +174,35 @@ def activity7():
         print(f" You havent mined a gold today\n")
     else:
         print("Invalid error\n")
+
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------------- ACTIVITY 8 ------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def activity8():
+    pass
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------------- ACTIVITY 9 ------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def activity9():
+    print("\n\t========================== ACTIVITY 9 ==========================\n")
+    age = int(input("Enter your age: "))
+    if age <= 1:
+        print("You are a Toddler\n")
+    elif age <= 8:
+        print("You are a Pre-teen\n")
+    elif age <= 14: 
+        print("You are Teenager\n")
+    elif age <= 19:
+        print("You are in Early adulthood\n")
+    elif age <= 32:
+        print("You are in Mid adulthood\n")
+    elif age <= 46:
+        print("You are in Post adulthood\n")
+    elif age >= 60:
+        print("You are in your Senior\n")
+    else:
+        print("Invalid syntax\n")

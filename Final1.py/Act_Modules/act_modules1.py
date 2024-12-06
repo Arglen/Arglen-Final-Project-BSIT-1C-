@@ -13,7 +13,7 @@ def activity_intro():
         print("\t15. Activity \t\t 16. Activity ")
         print("\t17. Activity \t\t 18 Activity ")
         print("\t19. Activity \t\t 20. Activity ")
-        print("\t30. Exit\n")
+        print("\t0. Exit\n")
         user = str(input("ENTER A NUMBER: "))
         print("=========================\n")
 
@@ -38,11 +38,11 @@ def activity_intro():
         elif user == "9":
             activity9()
         elif user == "10":
-            pass
+            activity10()
         elif user == "11":
             pass
         elif user == "12":
-            pass
+            activity12()
         elif user == "13":
             pass
         elif user == "14":
@@ -206,3 +206,54 @@ def activity9():
         print("You are in your Senior\n")
     else:
         print("Invalid syntax\n")
+
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------------- ACTIVITY 10 -----------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def activity10():
+    print("\n\t========================== ACTIVITY 10 ==========================\n")
+    dll = str(input("Are you a current student from DLL? (yes/no): "))
+    if dll.lower() == "yes":
+        print("\n\tWelcome to DLL BSIT scholarship\n")
+        location = str(input("Are from Barangay 9 (yes/no): "))
+        if location.lower() == "yes":
+            print("Please fill up the additional information")
+            year = str(input("What is your current year in DLL (f = freshmen)(p = sophomore)(j = Junior)(s = senior): "))
+            if year.lower() == "f":
+                print("Hi Freshmen")
+            elif year.lower() == "p":
+                print("Hi sophomore")
+            elif year.lower() == "j":
+                print("Hi junior")
+            elif year.lower() == "s":
+                print("Hi senior")
+            else:
+                print("Invalid choice")
+            choice = str(input("Do you need scholarship (yes/no): "))
+            if choice.lower() == "yes":
+                print("You been granted a scholarship\n")
+            else:
+                print("You choose no (meaning you dont need scholarship\n)")
+        else:
+            print("Invalid location\n")
+    else:
+        print("Invalid choice in location\n")
+
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------------- ACTIVITY 11 -----------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def activity11():
+    pass
+
+#-----------------------------------------------------------------------------------------------------------------------                    
+#----------------------------------------------------- ACTIVITY 12 -----------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------
+
+def activity12():
+    print("\n\t========================== ACTIVITY 10 ==========================\n")
+    for x in range(10, 1, -1):
+        print(f"{x}\n")

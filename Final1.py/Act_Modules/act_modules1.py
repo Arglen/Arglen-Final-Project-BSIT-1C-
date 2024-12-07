@@ -369,7 +369,7 @@ def activity19():
     while elumbs == True:
         name = str(input("Do you enter name (yes/ no): "))
         if name.lower() == "no":
-            print("program terminated")
+            print("program terminated\n")
             break
         else:
             continue

@@ -56,7 +56,7 @@ def activity_intro():
         elif user == "18":
             activity18()
         elif user == "19":
-            pass
+            activity19()
         elif user == "20":
             pass
         elif user == "0":  
@@ -364,7 +364,15 @@ def activity18():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity19():
-    pass
+    print("\n\t========================== ACTIVITY 19 ==========================\n")
+    elumbs = True
+    while elumbs == True:
+        name = str(input("Do you enter name (yes/ no): "))
+        if name.lower() == "no":
+            print("program terminated")
+            break
+        else:
+            continue
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 20 -----------------------------------------------------

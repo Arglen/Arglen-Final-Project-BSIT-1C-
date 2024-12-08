@@ -34,13 +34,13 @@ def activity_intro():
         elif user == "7":
             activity7()
         elif user == "8":
-            pass
+            activity8()
         elif user == "9":
             activity9()
         elif user == "10":
             activity10()
         elif user == "11":
-            pass
+            activity11()
         elif user == "12":
             activity12()
         elif user == "13":
@@ -59,8 +59,18 @@ def activity_intro():
             activity19()
         elif user == "20":
             activity20()
+        elif user == "21":
+            pass
+        elif user == "22":
+            pass
+        elif user == "23":
+            pass
+        elif user == "24":
+            pass
+        elif user == "25":
+            pass
         elif user == "0":  
-            print("Return...")
+            print("Return...\n")
             return
         else:
             print("Invalid option. Please try again.")
@@ -189,7 +199,14 @@ def activity7():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity8():
-    pass
+    print("\n\t========================== ACTIVITY 8 ==========================\n")
+    passcode= input("Enter passkey >>> ") 
+    if passcode.lower() == "hi":
+        print("Hi")
+        print("Love ya too, mwaa\n")
+    else:
+        print("wrong passkey!!")
+        print("""Hint: HI yung password\n""")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 9 ------------------------------------------------------
@@ -255,7 +272,10 @@ def activity10():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity11():
-    pass
+    print("\n\t========================== ACTIVITY 11 ==========================\n")
+    for repeat in range (1,11):
+        print("Hello World\n")
+    
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 12 -----------------------------------------------------

@@ -19,7 +19,7 @@ def intro_code_challenge():
         print("14.Code Challenge ")
         print("15.Code Challenge ")
         print("16.Code Challenge ")
-        print("0. Exit\n")
+        print("0. Return\n")
         user = str(input("ENTER A NUMBER: "))
         print("=========================\n")
 

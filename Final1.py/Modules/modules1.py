@@ -2,7 +2,9 @@ import os
 
 def intro_code_challenge():
     while True:
-        print("=====CODE CHALLENGES===== \n")
+        print("\n\t=====================================")
+        print("\t|          CODE CHALENGE MENU        |")
+        print("\t=====================================\n")
         print("1. Code Challenge ")
         print("2. Code Challenge ")
         print("3. Code Challenge ")

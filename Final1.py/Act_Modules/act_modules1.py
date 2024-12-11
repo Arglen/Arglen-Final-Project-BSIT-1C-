@@ -3,7 +3,9 @@ import os
 
 def activity_intro():
     while True:
-        print("\t====== ACTIVITIES ====== \n")
+        print("\n\t=====================================")
+        print("\t|          ACTIVITIES MENU          |")
+        print("\t=====================================\n")
         print("\t1. Activity \t\t 2. Activity ")
         print("\t3. Activity \t\t 4. Activity ")
         print("\t5. Activity \t\t 6. Activity ")

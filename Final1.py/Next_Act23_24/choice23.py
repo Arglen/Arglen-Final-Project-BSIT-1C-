@@ -11,7 +11,9 @@ def activity24(number):
 
 def choices():
     while True:
-        print("\t====== ACTIVITIES ====== \n")
+        print("\n\t=====================================")
+        print("\t|          ACTIVITIES MENU          |")
+        print("\t=====================================\n")
         print("\t21. Activity \t\t 22. Activity ")
         print("\t23. Activity \t\t 24. Activity ")
         print("\t25. Activity")

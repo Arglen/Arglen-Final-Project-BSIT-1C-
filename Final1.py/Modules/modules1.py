@@ -482,7 +482,8 @@ def code_challenge14():
     tuloy = True
     a = 0
     while tuloy == True:
-        number = eval(input("Enter a number--->  "))
+        number = eval(input("Enter a number [0 to terminate] --->  "))   
+        print
         if number == 0:
             print("Program Terminated")
             print(f"The total of the number you enter is {a}")

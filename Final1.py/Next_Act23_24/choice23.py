@@ -23,7 +23,7 @@ def choices():
         if usr == "21":
             activity21()
         elif usr == "22":
-            pass
+            activity22()
         elif usr == "23":
             print("\n\t========================== ACTIVITY 23 ==========================\n")
             print("\n\tTHE ACTIVITY 23 iS A BODY PROGRAM OF THE ACTIVITY 24, IN WHICH I CANNOT SHOW THE FUNCTION PRGORAM\n")
@@ -64,7 +64,13 @@ def activity21():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity22():
-    pass
+    print("\n\t========================== ACTIVITY 22 ==========================\n")
+    print("""\tTHIST PART OF ACTIVITY IS THE COMPILATION OF THE ALL THE ACTIVITIES,\n\tWHERE SIR LEONARD DEMONSTRATE THE USE OF DEFINITION:
+          \n\tEXAMPLE: 
+          \t def activity1():
+          \t    pass
+          \t def activity2():
+          \t    pass """)
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 23 -----------------------------------------------------
@@ -89,6 +95,5 @@ def activity22():
 
 def activity25():
     pass
-
 
         

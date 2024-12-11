@@ -10,7 +10,7 @@ def main():
         print(""" \t\n=============| ARGLEN L. ELUMBA |============\t\n============| COMPILATION PROJECT |============ \n""")
         print("1. Code Challenges")
         print("2. Acivities ")
-        print("3. 2ND - Activities (23-24)")
+        print("3. 2ND - Activities (21-25)")
         print("4. Exit\n")
         user = str(input("CHOOSE A NUMBER: "))
         os.system('cls')

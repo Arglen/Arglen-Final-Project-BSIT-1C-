@@ -1,7 +1,7 @@
 import os
-from CODE_CHALLENGES import modules1
-from ACTIVITY_CODES import act_modules1
-from ACTIVITY_21_25 import choice23
+from CODE_CHALLENGES import code_challenges
+from ACTIVITY_CODES import activity1_20
+from ACTIVITY_21_25 import activity21_25
 
 
 def main():
@@ -21,13 +21,13 @@ def main():
         user = str(input("\t\t\t\t\tCHOOSE A NUMBER: "))
         os.system('cls')
         if user == "1":
-            modules1.intro_code_challenge()
+            code_challenges.intro_code_challenge()
 
         elif user == "2":
-            act_modules1.activity_intro()
+            activity1_20.activity_intro()
         
         elif user == "3":
-            choice23.choices()
+            activity21_25.choices()
 
         elif user == "4":  
             exit()

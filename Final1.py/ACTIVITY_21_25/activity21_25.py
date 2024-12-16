@@ -21,7 +21,7 @@ def choices():
         print("\t\t\t\t\t|                  0. Return                   |")
         print("\t\t\t\t\t===============================================\n")
         usr = str(input("\t\t\t\t\tENTER A NUMBER: "))
-        print("\n=========================\n")
+        print("\n\t\t\t\t\t=========================\n")
         os.system('cls')
         if usr == "21":
             activity21()
@@ -35,10 +35,10 @@ def choices():
         elif usr == "25":
             activity25()
         elif usr == "0":  
-            print("Return...\n")
+            print("\t\t\t\t\tReturn...\n")
             return
         else:
-            print("invalid input\n")
+            print("\t\t\t\t\tinvalid input\n")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 21 -----------------------------------------------------

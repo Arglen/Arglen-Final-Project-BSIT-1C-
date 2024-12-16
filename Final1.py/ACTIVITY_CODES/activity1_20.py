@@ -20,7 +20,7 @@ def activity_intro():
         print("\t\t\t\t\t|                  0. Return                   |")
         print("\t\t\t\t\t===============================================\n")
         user = str(input("\t\t\t\t\tENTER A NUMBER: "))
-        print("\n=========================\n")
+        print("\n\t\t\t\t\t=========================\n")
 
         os.system('cls')
 
@@ -65,11 +65,11 @@ def activity_intro():
         elif user == "20":
             activity20()
         elif user == "0":  
-            print("Return...\n")
+            print("\t\t\t\t\tReturn...\n")
             return
         else:
-            print("Invalid option. Please try again.")
-            print("=========================\n")
+            print("\t\t\t\t\tInvalid option. Please try again.")
+            print("\t\t\t\t\t=========================\n")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 1 ------------------------------------------------------

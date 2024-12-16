@@ -3,7 +3,6 @@ from CODE_CHALLENGES import code_challenges
 from ACTIVITY_CODES import activity1_20
 from ACTIVITY_21_25 import activity21_25
 
-
 def main():
     
     while True:

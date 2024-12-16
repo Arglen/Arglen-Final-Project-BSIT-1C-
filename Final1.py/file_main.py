@@ -1,18 +1,24 @@
 import os
-from Modules import modules1
-from Act_Modules import act_modules1
-from Next_Act23_24 import choice23
+from CODE_CHALLENGES import modules1
+from ACTIVITY_CODES import act_modules1
+from ACTIVITY_21_25 import choice23
 
 
 def main():
     
     while True:
-        print(""" \t\n=============| ARGLEN L. ELUMBA |============\t\n============| COMPILATION PROJECT |============ \n""")
-        print("1. Code Challenges")
-        print("2. Acivities ")
-        print("3. 2ND - Activities (21-25)")
-        print("4. Exit\n")
-        user = str(input("CHOOSE A NUMBER: "))
+        print("\t\t\t\t\t=========================================================")
+        print("\t\t\t\t\t=================== ARGLEN L. ELUMBA ====================")
+        print("\t\t\t\t\t=========================================================")
+        print("\t\t\t\t\t================== COMPILATION PROJECT ==================")
+        print("\t\t\t\t\t=========================================================")
+        print("\t\t\t\t\t====|    1. CODE CHALLENGES                         |====")
+        print("\t\t\t\t\t====|    2. ACTIVITY 1 - 20                         |====")
+        print("\t\t\t\t\t====|    3. ACTIVITY 21 - 25                        |====")
+        print("\t\t\t\t\t====|    4. EXIT PROGRAM                            |====")
+        print("\t\t\t\t\t=========================================================")
+        print("\t\t\t\t\t=========================================================")
+        user = str(input("\t\t\t\t\tCHOOSE A NUMBER: "))
         os.system('cls')
         if user == "1":
             modules1.intro_code_challenge()

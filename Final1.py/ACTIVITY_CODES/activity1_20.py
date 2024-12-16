@@ -79,9 +79,9 @@ def activity_intro():
 def activity1():
     print("\n\t\t\t\t\t========================== ACTIVITY 1 ==========================\n")
     print("""\n
-        \t\t\t\t\t==========TYPING TEST SCORE==========
-        \t\t\t\t\tt5 Minutes Typing Test: Score
-        \t\t\t\t\t43 WPM is with 91% ACCURACY\n""")
+        \t\t\t\t\t\t==========TYPING TEST SCORE==========
+        \t\t\t\t\t\tt5 Minutes Typing Test: Score
+        \t\t\t\t\t\t43 WPM is with 91% ACCURACY\n""")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -101,15 +101,15 @@ def activity2():
 
 
 def activity3():
-    print("\n\t========================== ACTIVITY 3 ==========================\n")
-    name = input("What is your name: ")
-    age = input("How old are you: ")
-    email = input("What is your email: ")
-    bday = input("When is your Birthday: ")
-    add = input("Enter your Address: ")
-    disc = input("Enter other description: ")
+    print("\n\t\t\t\t\t========================== ACTIVITY 3 ==========================\n")
+    name = input("\t\t\t\t\tWhat is your name: ")
+    age = input("\t\t\t\t\tHow old are you: ")
+    email = input("\t\t\t\t\tWhat is your email: ")
+    bday = input("\t\t\t\t\tWhen is your Birthday: ")
+    add = input("\t\t\t\t\tEnter your Address: ")
+    disc = input("\t\t\t\t\tEnter other description: ")
 
-    print(f"\nMy name is {name} and I am {age} yrs old. I was born in {bday} And I am from {add}. This is my Email {email}. Other Description: {disc}.\n")
+    print(f"\n\t\t\t\t\tMy name is {name} and I am {age} yrs old. I was born in {bday} And I am from {add}. This is my Email {email}. Other Description: {disc}.\n")
     
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -118,9 +118,9 @@ def activity3():
 
 
 def activity4():
-    print("\n\t========================== ACTIVITY 4 ==========================\n")
-    number1 = eval(input("Input first number here > "))
-    number2 = eval(input("Input 2nd number here > "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 4 ==========================\n")
+    number1 = eval(input("\t\t\t\t\tInput first number here > "))
+    number2 = eval(input("\t\t\t\t\tInput 2nd number here > "))
     print(type(number1))
     print(type(number2))
     calc = number1 + number2
@@ -130,13 +130,13 @@ def activity4():
     exponent = number1 ** number2
     remainder = number1 % number2
     fdivision = number1 // number2
-    print("\nThe sum of" , number1 , "and" , number2 , "is" , calc)
-    print("The difference of" , number1 , "and" , number2 , "is" , minus)
-    print("The product of" , number1 , "and" , number2 , "is" , product)
-    print("The quotient of" , number1 , "and" , number2 , "is" , quotient)
-    print(number1 , "exponent by" , number2 , "is" , exponent)
-    print("The remainder of" , number1 , "and" , number2 , "is" , remainder)
-    print("The floor division of" , number1 , "and" , number2 , "is" , fdivision, "\n" ,)
+    print("\n\t\t\t\t\tThe sum of" , number1 , "and" , number2 , "is" , calc)
+    print("\t\t\t\t\tThe difference of" , number1 , "and" , number2 , "is" , minus)
+    print("\t\t\t\t\tThe product of" , number1 , "and" , number2 , "is" , product)
+    print("\t\t\t\t\tThe quotient of" , number1 , "and" , number2 , "is" , quotient)
+    print(f"\t\t\t\t\t{number1} , exponent by , {number2} , is , {exponent}")
+    print("\t\t\t\t\tThe remainder of" , number1 , "and" , number2 , "is" , remainder)
+    print("\t\t\t\t\tThe floor division of" , number1 , "and" , number2 , "is" , fdivision, "\n" ,)
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -145,11 +145,11 @@ def activity4():
 
 
 def activity5():
-    print("\n\t========================== ACTIVITY 5 ==========================\n")
-    temp = int(input("Enter temperature in Fahrenheit: "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 5 ==========================\n")
+    temp = int(input("\t\t\t\t\tEnter temperature in Fahrenheit: "))
     cel = (temp - 32) * 5 / 9
     cel_r = round(cel, 2)
-    print(f"\nThe conversion of  {temp} degrees Fahrenhet is {cel_r} degrees celsius.\n")
+    print(f"\n\t\t\t\t\tThe conversion of  {temp} degrees Fahrenhet is {cel_r} degrees celsius.\n")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -158,17 +158,17 @@ def activity5():
 
 
 def activity6():
-    print("\n\t========================== ACTIVITY 6 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 6 ==========================\n")
     x = 5
-    print(f"{x}")
+    print(f"\t\t\t\t\t{x}")
     x = x + 10
-    print(x)
+    print(f"\t\t\t\t\t{x}")
     x = x + 15
-    print(x)
+    print(f"\t\t\t\t\t{x}")
     x = x + 20
-    print(x)
+    print(f"\t\t\t\t\t{x}")
     x = x + 25
-    print(f"{x}\n")
+    print(f"\t\t\t\t\t{x}\n")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -176,17 +176,17 @@ def activity6():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity7():
-    print("\n\t========================== ACTIVITY 7 ==========================\n")
-    miner = str(input("Enter you name: "))
-    mined = str(input("Did you mine gold today (yes/no) : "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 7 ==========================\n")
+    miner = str(input("\t\t\t\t\tEnter you name: "))
+    mined = str(input("\t\t\t\t\tDid you mine gold today (yes/no) : "))
     gold = 0
     if mined.lower() == "yes":
         gold += 1
-        print(f" Your total mined today is {gold} gold\n")
+        print(f"\t\t\t\t\tYour total mined today is {gold} gold\n")
     elif mined.lower() == "no":
-        print(f" You havent mined a gold today\n")
+        print(f"\t\t\t\t\tYou havent mined a gold today\n")
     else:
-        print("Invalid error\n")
+        print("\t\t\t\t\tInvalid error\n")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -194,38 +194,38 @@ def activity7():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity8():
-    print("\n\t========================== ACTIVITY 8 ==========================\n")
-    passcode= input("Enter passkey >>> ") 
+    print("\n\t\t\t\t\t========================== ACTIVITY 8 ==========================\n")
+    passcode= input("\t\t\t\t\tEnter passkey >>> ") 
     if passcode.lower() == "hi":
-        print("Hi")
-        print("Love ya too, mwaa\n")
+        print("\t\t\t\t\tHi")
+        print("\t\t\t\t\tLove ya too, mwaa\n")
     else:
-        print("wrong passkey!!")
-        print("""Hint: HI yung password\n""")
+        print("\t\t\t\t\twrong passkey!!")
+        print("""\t\t\t\t\tHint: HI yung password\n""")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 9 ------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity9():
-    print("\n\t========================== ACTIVITY 9 ==========================\n")
-    age = int(input("Enter your age: "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 9 ==========================\n")
+    age = int(input("\t\t\t\t\tEnter your age: "))
     if age <= 1:
-        print("You are a Toddler\n")
+        print("\t\t\t\t\tYou are a Toddler\n")
     elif age <= 8:
-        print("You are a Pre-teen\n")
+        print("\t\t\t\t\tYou are a Pre-teen\n")
     elif age <= 14: 
-        print("You are Teenager\n")
+        print("\t\t\t\t\tYou are Teenager\n")
     elif age <= 19:
-        print("You are in Early adulthood\n")
+        print("\t\t\t\t\tYou are in Early adulthood\n")
     elif age <= 32:
-        print("You are in Mid adulthood\n")
+        print("\t\t\t\t\tYou are in Mid adulthood\n")
     elif age <= 46:
-        print("You are in Post adulthood\n")
+        print("\t\t\t\t\tYou are in Post adulthood\n")
     elif age >= 60:
-        print("You are in your Senior\n")
+        print("\t\t\t\t\tYou are in your Senior\n")
     else:
-        print("Invalid syntax\n")
+        print("\t\t\t\t\tInvalid syntax\n")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -233,33 +233,33 @@ def activity9():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity10():
-    print("\n\t========================== ACTIVITY 10 ==========================\n")
-    dll = str(input("Are you a current student from DLL? (yes/no): "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 10 ==========================\n")
+    dll = str(input("\t\t\t\t\tAre you a current student from DLL? (yes/no): "))
     if dll.lower() == "yes":
-        print("\n\tWelcome to DLL BSIT scholarship\n")
-        location = str(input("Are from Barangay 9 (yes/no): "))
+        print("\n\t\t\t\t\tWelcome to DLL BSIT scholarship\n")
+        location = str(input("\t\t\t\t\tAre from Barangay 9 (yes/no): "))
         if location.lower() == "yes":
-            print("Please fill up the additional information")
-            year = str(input("What is your current year in DLL (f = freshmen)(p = sophomore)(j = Junior)(s = senior): "))
+            print("\t\t\t\t\tPlease fill up the additional information")
+            year = str(input("\t\t\t\t\tWhat is your current year in DLL (f = freshmen)(p = sophomore)(j = Junior)(s = senior): "))
             if year.lower() == "f":
-                print("Hi Freshmen")
+                print("\t\t\t\t\tHi Freshmen")
             elif year.lower() == "p":
-                print("Hi sophomore")
+                print("\t\t\t\t\tHi sophomore")
             elif year.lower() == "j":
-                print("Hi junior")
+                print("\t\t\t\t\tHi junior")
             elif year.lower() == "s":
-                print("Hi senior")
+                print("\t\t\t\t\tHi senior")
             else:
-                print("Invalid choice")
-            choice = str(input("Do you need scholarship (yes/no): "))
+                print("\t\t\t\t\tInvalid choice")
+            choice = str(input("\t\t\t\t\tDo you need scholarship (yes/no): "))
             if choice.lower() == "yes":
-                print("You been granted a scholarship\n")
+                print("\t\t\t\t\tYou been granted a scholarship\n")
             else:
-                print("You choose no (meaning you dont need scholarship\n)")
+                print("\t\t\t\t\tYou choose no (meaning you dont need scholarship\n)")
         else:
-            print("Invalid location\n")
+            print("\t\t\t\t\tInvalid location\n")
     else:
-        print("Invalid choice in location\n")
+        print("\t\t\t\t\tInvalid choice in location\n")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -267,9 +267,9 @@ def activity10():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity11():
-    print("\n\t========================== ACTIVITY 11 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 11 ==========================\n")
     for repeat in range (1,11):
-        print("Hello World\n")
+        print("\t\t\t\t\tHello World\n")
     
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -277,33 +277,33 @@ def activity11():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity12():
-    print("\n\t========================== ACTIVITY 12 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 12 ==========================\n")
     for x in range(10, 1, -1):
-        print(f"{x}\n")
+        print(f"\t\t\t\t\t{x}\n")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 13 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity13():
-    print("\n\t========================== ACTIVITY 13 ==========================\n")
-    number = int(input("Enter any number: "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 13 ==========================\n")
+    number = int(input("\t\t\t\t\tEnter any number: "))
     factorial = 1
     for fact in range(number, 0, -1):
         factorial *= fact 
         rounded = round(factorial, 2)
-    print(f"The factorial of {rounded}\n")
+    print(f"\t\t\t\t\tThe factorial of {rounded}\n")
 
 #-----------------------------------------------------------------------------------------------------------------------                    
 #----------------------------------------------------- ACTIVITY 14 -----------------------------------------------------
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity14():
-    print("\n\t========================== ACTIVITY 14 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 14 ==========================\n")
     for x in range(1,11, 5):
         print(x, end="3")
-    print("Hello World", end=" - ")
-    print("BSIT 1C\n")
+    print("\t\t\t\t\tHello World", end=" - ")
+    print("\t\t\t\t\tBSIT 1C\n")
 
     for x in range(1,11):
         print(x, end=" ")
@@ -317,7 +317,7 @@ def activity14():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity15():
-    print("\n\t========================== ACTIVITY 15 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 15 ==========================\n")
     for x in range(1,11, 5):
         print(x, end=" ")
         for y in range(1, 11):
@@ -331,7 +331,7 @@ def activity15():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity16():
-    print("\n\t========================== ACTIVITY 16 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 16 ==========================\n")
     for x in range(1, 6):
         for y in range(1, x + 1):
             print("  ",end="")
@@ -350,11 +350,11 @@ def activity16():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity17():
-    print("\n\t========================== ACTIVITY 17 ==========================\n")
-    elu = int(input("Enter a number: "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 17 ==========================\n")
+    elu = int(input("\t\t\t\t\tEnter a number: "))
     for x in range(1,11):
         for y in range(1, elu + 1):
-            print(f"{x} x {y} = {x*y}", end="\t")
+            print(f"   {x} x {y} = {x*y}", end=" ")
         print() 
     
 
@@ -363,8 +363,8 @@ def activity17():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity18():
-    print("\n\t========================== ACTIVITY 18 ==========================\n")
-    eluh = int(input("Enter a number: "))
+    print("\n\t\t\t\t\t========================== ACTIVITY 18 ==========================\n")
+    eluh = int(input("\t\t\t\t\tEnter a number: "))
     for a in range(1,5):
         for x in range(1,eluh +1 ):
             for y in range(1, a + 1):
@@ -379,12 +379,12 @@ def activity18():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity19():
-    print("\n\t========================== ACTIVITY 19 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 19 ==========================\n")
     elumbs = True
     while elumbs == True:
-        name = str(input("Do you enter name (yes/ no): "))
+        name = str(input("\t\t\t\t\tDo you enter name (yes/ no): "))
         if name.lower() == "no":
-            print("program terminated\n")
+            print("\t\t\t\t\tprogram terminated\n")
             break
         else:
             continue
@@ -394,13 +394,13 @@ def activity19():
 #-----------------------------------------------------------------------------------------------------------------------
 
 def activity20():
-    print("\n\t========================== ACTIVITY 20 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 20 ==========================\n")
     condition = True
     num = 0
     while condition == True:
-        question = str(input("Do you want to add triangles (yes/no): "))
+        question = str(input("\t\t\t\t\tDo you want to add triangles (yes/no): "))
         if question.lower() == "no":
-            print("PROGRAM TERMINATED\n")
+            print("\t\t\t\t\tPROGRAM TERMINATED\n")
             break
         else:
             num += 1

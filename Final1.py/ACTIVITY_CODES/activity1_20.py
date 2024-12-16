@@ -3,22 +3,24 @@ import os
 
 def activity_intro():
     while True:
-        print("\n\t=====================================")
-        print("\t|          ACTIVITIES MENU          |")
-        print("\t=====================================\n")
-        print("\t1. Activity \t\t 2. Activity ")
-        print("\t3. Activity \t\t 4. Activity ")
-        print("\t5. Activity \t\t 6. Activity ")
-        print("\t7. Activity \t\t 8. Activity ")
-        print("\t9. Activity \t\t 10. Activity ")
-        print("\t11. Activity \t\t 12. Activity ")
-        print("\t13. Activity \t\t 14. Activity ")
-        print("\t15. Activity \t\t 16. Activity ")
-        print("\t17. Activity \t\t 18 Activity ")
-        print("\t19. Activity \t\t 20. Activity ")
-        print("\t0. Return\n")
-        user = str(input("ENTER A NUMBER: "))
-        print("=========================\n")
+        print("\n\t\t\t\t\t===============================================")
+        print("\t\t\t\t\t|                ACTIVITIES MENU               |")
+        print("\t\t\t\t\t===============================================\n")
+        print("\t\t\t\t\t|   1. Activity          |   2. Activity       |")
+        print("\t\t\t\t\t|   3. Activity          |   4. Activity       |")
+        print("\t\t\t\t\t|   5. Activity          |   6. Activity       |")
+        print("\t\t\t\t\t|   7. Activity          |   8. Activity       |")
+        print("\t\t\t\t\t|   9. Activity          |  10. Activity       |")
+        print("\t\t\t\t\t|  11. Activity          |  12. Activity       |")
+        print("\t\t\t\t\t|  13. Activity          |  14. Activity       |")
+        print("\t\t\t\t\t|  15. Activity          |  16. Activity       |")
+        print("\t\t\t\t\t|  17. Activity          |  18. Activity       |")
+        print("\t\t\t\t\t|  19. Activity          |  20. Activity       |")
+        print("\t\t\t\t\t|----------------------------------------------|")
+        print("\t\t\t\t\t|                  0. Return                   |")
+        print("\t\t\t\t\t===============================================\n")
+        user = str(input("\t\t\t\t\tENTER A NUMBER: "))
+        print("\n=========================\n")
 
         os.system('cls')
 
@@ -75,11 +77,11 @@ def activity_intro():
 
 
 def activity1():
-    print("\n\t========================== ACTIVITY 1 ==========================\n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 1 ==========================\n")
     print("""\n
-        \t==========TYPING TEST SCORE==========
-        \t\tt5 Minutes Typing Test: Score
-        \t\t43 WPM is with 91% ACCURACY\n""")
+        \t\t\t\t\t==========TYPING TEST SCORE==========
+        \t\t\t\t\tt5 Minutes Typing Test: Score
+        \t\t\t\t\t43 WPM is with 91% ACCURACY\n""")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
@@ -88,9 +90,9 @@ def activity1():
 
 
 def activity2():
-    print("\n\t========================== ACTIVITY 2 ==========================\n")
-    neme = input("Pease input a name ---->")
-    print(f"\tHi {neme} \n")
+    print("\n\t\t\t\t\t========================== ACTIVITY 2 ==========================\n")
+    neme = input("\t\t\t\t\tPease input a name ---->")
+    print(f"\t\t\t\t\tHi {neme} \n")
 
 
 #-----------------------------------------------------------------------------------------------------------------------                    
